@@ -11,7 +11,7 @@ import History from './components/History'
 import Events from './components/Events'
 import Services from './components/Services'
 import FoodItem from './components/FoodItem'
-import Service from './assets/Service'
+import Bidhaa from './components/Bidhaa'
 
 function App() {
 
@@ -23,8 +23,9 @@ function App() {
         <Route exact path="/" element={<Home/>}>
         </Route>
         <Route exact path="/about" element={<About/>}>
-          <Route exact path="/about/serices" element={<Services/>}>
-            <Route path="/about/serices/:serviceId" element={<Service/>}></Route>
+          <Route  path="/about/serices" element={<Services/>}>
+            <Route path="/about/serices/:serviceId" element={<Bidhaa/>}>
+            </Route>
           </Route>
           <Route path="/about/contacts" element={<Contacts/>}></Route>
           <Route path="/about/events" element={<Events/>}></Route>
