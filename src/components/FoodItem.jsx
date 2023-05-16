@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link,useParams } from 'react-router-dom'
 import { menuArray } from '../../public/data'
+
 export default function FoodItem(props) {
     const params = useParams()
    
