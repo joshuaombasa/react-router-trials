@@ -3,9 +3,10 @@ import { Link,Outlet } from "react-router-dom";
 import { servicesArray } from "../../public/services";
 
 
+
 export default function () {
    const servicesJsx = servicesArray.map(item => {
-    return  <h1 key={item.id}><Link to={`/about/serices/${item.id}`}>{item.name}</Link></h1>
+    return  <h1 key={item.id}><Link to={`/about/serices/${item.name}`}>{item.name}</Link></h1>
    })
 
   
