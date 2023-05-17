@@ -6,7 +6,6 @@ body {
 .App {
   width: 1000px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .nav-list {
@@ -40,9 +39,6 @@ body {
   margin: 0;
 }
 
-.about--page {
- 
-}
 
 .about-page-top {
 
