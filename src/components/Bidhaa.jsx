@@ -9,7 +9,7 @@ export default function Bidhaa(props) {
     const params = useParams()
      console.log(params.serviceId)
 
-     const selectedService = servicesArray.find(item => item.id === params.serviceId)
+     const selectedService = servicesArray.find(item => item.name === params.serviceId)
      console.log(selectedService)
 
     return (
