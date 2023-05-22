@@ -6,7 +6,7 @@ import { servicesArray } from "../../public/services";
 
 export default function () {
    const servicesJsx = servicesArray.map(item => {
-    return  <h1 key={item.id}><Link to={`/about/serices/${item.name}`}>{item.name}</Link></h1>
+    return  <h1 key={item.id}><Link to={`/about/services/${item.name}`}>{item.name}</Link></h1>
    })
 
   
