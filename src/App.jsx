@@ -3,15 +3,15 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import About from './components/About'
 import Home from './components/Home'
-import Header from './components/Header'
-import Profile from './components/Profile'
-import Contacts from './components/Contacts'
-import Products from './components/Products'
-import History from './components/History'
-import Events from './components/Events'
-import Services from './components/Services'
-import FoodItem from './components/FoodItem'
-import Bidhaa from './components/Bidhaa'
+import Header from './pages/Header'
+import Profile from './pages/Profile'
+import Contacts from './pages/Contacts'
+import Products from './pages/Products'
+import History from './pages/History'
+import Events from './pages/Events'
+import Services from './pages/Services'
+import FoodItem from './pages/FoodItem'
+import Bidhaa from './pages/Bidhaa'
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/" element={<Home/>}>
         </Route>
         <Route exact path="/about" element={<About/>}>
-          <Route  path="/about/services" element={<Services/>}>
+          <Route exact path="/about/services" element={<Services/>}>
             <Route path="/about/services/:serviceId" element={<Bidhaa/>}>
             </Route>
           </Route>
