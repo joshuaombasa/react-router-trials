@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Routes, Route, Outlet } from "react-router-dom";
-import Profile from "./Profile";
+import Profile from "../pages/Profile";
 export default function About() {
     return (
         <section className="about--page">
@@ -8,7 +8,7 @@ export default function About() {
                 <h1>This is the about page</h1>
                 <h2><Link to="/about/profile">Profile</Link></h2>
                 <ul>
-                    <li><Link to="/about/serices">Services</Link></li>
+                    <li><Link to="/about/services">Services</Link></li>
                     <li><Link to="/about/contacts">Contacts</Link></li>
                     <li><Link to="/about/events">Events</Link></li>
                     <li><Link to="/about/history">History</Link></li>
