@@ -7,10 +7,10 @@ export default function Bidhaa(props) {
     const navigate = useNavigate()
 
     const params = useParams()
-     console.log(params.serviceId)
+     
 
      const selectedService = servicesArray.find(item => item.name === params.serviceId)
-     console.log(selectedService)
+
 
     return (
         <div className="service--container">
