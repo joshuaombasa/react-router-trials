@@ -23,8 +23,8 @@ function App() {
         <Route exact path="/" element={<Home/>}>
         </Route>
         <Route exact path="/about" element={<About/>}>
-          <Route  path="/about/serices" element={<Services/>}>
-            <Route path="/about/serices/:serviceId" element={<Bidhaa/>}>
+          <Route  path="/about/services" element={<Services/>}>
+            <Route path="/about/services/:serviceId" element={<Bidhaa/>}>
             </Route>
           </Route>
           <Route path="/about/contacts" element={<Contacts/>}></Route>
